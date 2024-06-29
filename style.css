@@ -13,67 +13,81 @@ body{
 .main{
     width: 400px;
     border: 1px solid transparent;
+    outline: none;
     border-radius: 1.5rem;
     box-sizing: border-box;
     margin-top: 50px;
     background: linear-gradient(135deg ,#00feba , #5b548a);
+    box-shadow: 0px 0px 20px 0px;
     padding: 5px;
 }
 
-.submain{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 100%;
+.searchitems{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    /* box-shadow:0px 0px 32px 0px rgba( 31, 38, 135, 0.37 ); */
+    /* backdrop-filter : blur( 14px ); */
+    /* -webkit-backdrop-filter : blur( 14px ); */
+    border : 1px solid rgba( 255, 255, 255, 0.58 );
+    border-radius : 10px;
 }
 
-.searchitems{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
+.listitems{
+    width: 300px;
+    max-height: 200px;
+    overflow-y:  scroll;
+    margin: 1px auto;
+    background: transparent;
+    z-index: 1;
+    border: 1px solid rgba( 255, 255, 255, 0.58 );
+    border-radius: 5px;
+}
+
+.listitems ul{
+    list-style: none    ;
+}
+
+.listitems ul li{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.listitems ul li:hover{
+    background-color: rgba( 255, 255, 255, 0.58 );
 }
 
 #SearchCitytext{
     height: 2rem;
     width: 14rem;
-    /* color:; */
-    /* border: 1px solid white;
-    border-radius: 1.5em ;
     background-color: transparent;
-    color: white;
-    box-shadow: 0px 0px 3px 0px; */
-    background: rgba( 223, 223, 223, 0.5 );
-    box-shadow:0px 0px 32px 0px rgba( 31, 38, 135, 0.37 );
-    backdrop-filter : blur( 14px );
-    -webkit-backdrop-filter : blur( 14px );
-    border-radius : 10px;
-    border : 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none;
 }
 
 #SearchButton{
     height: 2.2rem;
     width: 2.2rem;
-    /* border: 1px solid rgb(255, 255, 255, 0.5) ;
-    border-radius: 1.5em;
-    box-sizing: border-box;
+    outline: none;
+    border: none;
     background-color: transparent;
-    color: white; */
-    background: rgba( 223, 223, 223, 0.5 );
-    box-shadow:0px 0px 32px 0px rgba( 31, 38, 135, 0.37 );
-    backdrop-filter : blur( 14px );
-    -webkit-backdrop-filter : blur( 14px );
-    border-radius : 10px;
-    border : 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
 input[type=text]{
     padding-left: 20px;
+    font-family: monospace;
+}
+
+input:focus{
+    outline: none;
 }
 
 ::placeholder{
-    color: black ;
+    color: black;
+    font-family: monospace;
 }
 
 .img-Container{
@@ -90,7 +104,8 @@ img{
     color: aliceblue;
     font-family: monospace;
     font-size: 2em;
-    margin: 0rem 2.5rem;
+    margin: 1.5rem 2.5rem 0 2.5rem;
+    padding-left: 5px;
 }
 
 .city-temparature{
@@ -98,6 +113,7 @@ img{
     justify-content: flex-start;
     margin-left: 2.5rem;
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .city-temparature-text{
@@ -125,12 +141,14 @@ img{
 
 .titles{
     color: rgb(99, 99, 99);
+    font-family: cursive;
 }
 
 .observation{
     color: white;
     font-size: 1.5rem;
     margin: 0.2em 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #Condition{
@@ -140,3 +158,9 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.listitems{
+    z-index: 1;
+}
+
+

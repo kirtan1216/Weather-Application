@@ -6,13 +6,14 @@
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb41a9bdc.js" crossorigin="anonymous"></script>
-</head>
+    <script src="City.js"></script>
+  </head>
 <body>
     <div class="main">
         <div class="submain">
             <div class="searchitems">
                 <div class="subsearch">
-                    <input type="text" placeholder="Enter city" id="SearchCitytext">
+                    <input type="text" placeholder="Enter city for weather update" id="SearchCitytext">
                 </div>
                 <div class="subsearch">
                     <button id="SearchButton">
@@ -20,73 +21,80 @@
                     </button>
                 </div>
             </div>
+
+            <div class="listitems">
+              
+            </div>
         </div>
 
 
+       <div class="vanish" hidden>
         <div class="submain">
-            <div class="city-name subsubmain">
-                
-            </div>
-            <div class="city-temparature subsubmain">
-                <p class="city-temparature-text"></p>            
-            </div>
-        </div>
+          <div class="city-name subsubmain">
+              
+          </div>
+          <div class="city-temparature subsubmain">
+              <p class="city-temparature-text"></p>            
+          </div>
+      </div>
 
-        <div class="submain">
-            <div class="card-main">
-                <div class="card">
-                  <div class="titles">
-                    UV
-                  </div>
-                  <div class="observation">
-
-                  </div>  
+      
+      <div class="submain">
+          <div class="card-main">
+              <div class="card">
+                <div class="titles">
+                  UV
                 </div>
-                <div class="card">
-                  <div class="titles">
-                    Humidity
-                  </div>
-                  <div class="observation">
+                <div class="observation">
 
-                  </div>  
+                </div>  
+              </div>
+              <div class="card">
+                <div class="titles">
+                  Humidity
                 </div>
-            </div>
-            <div class="card-main">
-                <div class="card">
-                  <div class="titles">
-                    Real Feel
-                  </div>
-                  <div class="observation">
+                <div class="observation">
 
-                  </div>  
+                </div>  
+              </div>
+          </div>
+          <div class="card-main">
+              <div class="card">
+                <div class="titles">
+                  Real Feel
                 </div>
-                <div class="card">
-                  <div class="titles">
-                    Wind speed 
-                  </div>
-                  <div class="observation">
-    
-                  </div>  
-                </div>
-            </div>
-            <div class="card-main">
-                
-                <div class="card">
-                  <div class="titles">
-                    Pressure
-                  </div>
-                  <div class="observation">
+                <div class="observation">
 
-                  </div>  
+                </div>  
+              </div>
+              <div class="card">
+                <div class="titles">
+                  Wind speed 
                 </div>
+                <div class="observation">
+  
+                </div>  
+              </div>
+          </div>
+          <div class="card-main">
+              
+              <div class="card">
+                <div class="titles">
+                  Pressure
+                </div>
+                <div class="observation">
 
-                <div class="card">
-                    <div id="Condition">
-                        <img id="img-condition">
-                    </div>
+                </div>  
+              </div>
+
+              <div class="card">
+                  <div id="Condition">
+                      <img id="img-condition">
                   </div>
-            </div>
-        </div>
+                </div>
+          </div>
+      </div>
+       </div>
 
         
     </div>
