@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb41a9bdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
@@ -15,30 +16,79 @@
                 </div>
                 <div class="subsearch">
                     <button id="SearchButton">
-                        Search
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="submain">
-            <div class="img-Container subsubmain">
-                <img src="cloudy_178342.png" alt="img" id="img-weather-condition">
-            </div>
-        </div>
-
-        <div class="submain">
-            <div class="city-temparature subsubmain">
-                <div class="temp">22<sup>o</sup></div>
-                <div class="temp-type">C</div>
-            </div>
-        </div>
 
         <div class="submain">
             <div class="city-name subsubmain">
-                Mumbai
+                
+            </div>
+            <div class="city-temparature subsubmain">
+                <p class="city-temparature-text"></p>            
             </div>
         </div>
+
+        <div class="submain">
+            <div class="card-main">
+                <div class="card">
+                  <div class="titles">
+                    UV
+                  </div>
+                  <div class="observation">
+
+                  </div>  
+                </div>
+                <div class="card">
+                  <div class="titles">
+                    Humidity
+                  </div>
+                  <div class="observation">
+
+                  </div>  
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card">
+                  <div class="titles">
+                    Real Feel
+                  </div>
+                  <div class="observation">
+
+                  </div>  
+                </div>
+                <div class="card">
+                  <div class="titles">
+                    Wind speed 
+                  </div>
+                  <div class="observation">
+    
+                  </div>  
+                </div>
+            </div>
+            <div class="card-main">
+                
+                <div class="card">
+                  <div class="titles">
+                    Pressure
+                  </div>
+                  <div class="observation">
+
+                  </div>  
+                </div>
+
+                <div class="card">
+                    <div id="Condition">
+                        <img id="img-condition">
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        
     </div>
 
     <script src="script.js"></script>
